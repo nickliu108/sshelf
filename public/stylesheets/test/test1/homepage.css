@@ -1,0 +1,155 @@
+﻿
+
+	main{position:relative;  overflow: visible;width: 100% !important;max-width: 100% !important;}
+	.NAPholder {width: 950px; margin: 0 auto;  background-color: #ffffff;float:none;position: relative;  }
+	.NAPleftCol {width: 520px; float: left; }
+	.NAPrightCol {width: 389px; float: right; border-left: 1px solid #000000; margin-top: 20px}
+	.NAPrightColMobile {width: 300px; margin: 0 auto;}
+
+
+	.NAPeditCover {background-color: #cccccc; width:520px; height:645px; margin: 20px 0 0 20px; display: block; position: relative;}
+
+	.NAPmagTitle {width:520px; padding-top: 10px; height: 44px; text-align: center;font-family: ModernNAP-DisplayItalic; font-size: 30px; margin-left: 20px; float: left; background: url(/alfresco/nap/webAssets/webPage/homepage-rebuild/keyline.gif) repeat-x 0 10px; }
+	.lang-zh .NAPmagTitle {font-family:"ModernNAP-Display",'MSung PRC Light', Arial, "Microsoft YaHei", Hei, Hei Ti, SimHei, STXihei, sans-serif !important; font-size:28px;}
+	.NAPmagTitle span{font-family:"ModernNAP-Display",'MSung PRC Light', Arial, "Microsoft YaHei", Hei, Hei Ti, SimHei, STXihei, sans-serif !important; font-size:28px;}
+
+	.NAPmagContent {width: 520px; height: 1121px; display: block;float: left; margin-left: 20px; background-repeat: no-repeat;}
+
+	.NAPmagStoryA, .NAPmagStoryB  {width: 520px; margin-bottom:10px; height: 216px; position: relative; }
+	.NAPmagContent a, .NAPmarketStoryHolder a {text-decoration: none; color: #000000}
+	.NAPmagStoryA .NAPstoryTitle { margin-left: 216px; width: 242px;  margin-top: 55px}
+	.NAPmagStoryA .NAPstoryTitle a {font-family:ModernNAP-SuperDisplay; font-size: 36px;line-height: 32px;}
+	.NAPmagStoryA .NAPstorySubtext { margin-left: 216px; width: 242px; }
+	.NAPmagStoryA .NAPstorySubtext a{font-family: ModernNAP-DisplayItalic; font-size: 20px;line-height: 22px}
+	.NAPmagStoryB .NAPstoryTitle {  margin-left: 50px; width: 242px;  margin-top: 55px; text-align: right}
+	.NAPmagStoryB .NAPstoryTitle a {font-family:ModernNAP-SuperDisplay;font-size: 36px;line-height: 32px;text-align: right}
+	.NAPmagStoryB .NAPstorySubtext {  margin-left: 50px; width: 242px; text-align: right}
+	.NAPmagStoryB .NAPstorySubtext a{font-family: ModernNAP-DisplayItalic;font-size: 20px;line-height: 22px;text-align: right}
+	.NAPmagStoryB.story-position-1 {text-align: right;}
+	.NAPmagStoryB.story-position-3 {text-align: right;}
+	.lang-zh .NAPmagStoryA .NAPstoryTitle a {font-family:"ModernNAP-Display",'MSung PRC Medium', Arial, "Microsoft YaHei", Hei, Hei Ti, SimHei, STXihei, sans-serif !important; font-size: 32px; line-height:33px}
+	.lang-zh .NAPmagStoryA .NAPstorySubtext a{font-family:"ModernNAP-Display",'MSung PRC Light', Arial, "Microsoft YaHei", Hei, Hei Ti, SimHei, STXihei, sans-serif !important;font-size: 18px; line-height:20px}
+	.lang-zh .NAPmagStoryB .NAPstoryTitle a {font-family:"ModernNAP-Display",'MSung PRC Medium', Arial, "Microsoft YaHei", Hei, Hei Ti, SimHei, STXihei, sans-serif !important; font-size: 32px; line-height:33px}
+	.lang-zh .NAPmagStoryB .NAPstorySubtext a {font-family:"ModernNAP-Display",'MSung PRC Light', Arial, "Microsoft YaHei", Hei, Hei Ti, SimHei, STXihei, sans-serif !important; font-size: 18px; line-height:20px}
+
+	.NAPstoryLink {float:left; width: 520px; margin-bottom:10px; height: 216px; display: block; z-index: 5; top:0; left: 0; position: absolute; }
+	.NAPStoryText {float:left; width: 520px; margin-bottom:10px; height: 216px; display: block; z-index: 0; top:0; left: 0; position: absolute; }
+
+	.NAPmarketTitle {text-align: center;width:390px; float: left;  height:46px; margin-top: -6px}
+	.NAPmarketTitle .NAPtextWhite{font-family: GillSans; font-size: 26px;text-transform: uppercase;}
+	.lang-zh .NAPmarketTitle  {font-family:"ModernNAP-Display",'MSung PRC Light', Arial, "Microsoft YaHei", Hei, Hei Ti, SimHei, STXihei, sans-serif !important; font-size:24px;}	
+	.lang-zh #main #content .NAPmarketTitle  .NAPtextWhite {font-family: GillSans, "微软雅黑", "Microsoft YaHei",Hei,Hei Ti,SimHei,STXihei,sans-serif !important; font-size:24px;}	
+	
+	.NAPmarketStory {width: 300px; height: 203px; float:left; margin-left: 45px}
+	.NAPmarketStoryLink {width:300px; height: 225px; position: absolute; top:0;  z-index: 5; left:45px;}
+
+	/*.NAPmarketStoryTextHolder {position: absolute; top: 170px; left:60px; width:270px;} PUTBACK*/
+	.NAPmarketStoryText {font-size: 20px; font-family:GillSans; background-color: #ffffff; height: 55px; text-align: center; margin: 0 auto;display: table; padding: 0 12px  }
+	.lang-zh .NAPmarketStoryText {font-family:"ModernNAP-Display",'MSung PRC Medium', Arial, "Microsoft YaHei", Hei, Hei Ti, SimHei, STXihei, sans-serif !important;}	
+
+	.NAPmarketStoryHolder {position: relative; float: left; height: 225px}
+
+	/* Just for the 16th - start
+	.NAPmarketStory img[src="/alfresco/nap/webAssets/webPage/homepage-rebuild/desktop/marketing/coming_soon/2014/01/16/intl/Marketing3.jpg"] {height: 225px}
+	.NAPmarketStoryHolder:nth-child(5) .NAPmarketStoryText {background: none}
+	end 
+	.NAPmarketStoryHolder .NAPmarketStoryText {width: 300px; margin-left: -30px; background: none}
+	.NAPmarketStoryHolder .NAPmarketStoryText a{background-color: #fff; padding: 3px 18px 0 18px;}
+	widths*/
+
+	.NAPmarketStoryTextHolder {position: absolute; top: 170px; left:35px; width:320px;} /*TAKE OUT*/
+
+	.NAPmarketStoryHolderLast {position: relative; float: left; height: 215px}
+	.NAPmarketDesigner { margin-top: 6px; height: 20px; }
+	.NAPmarketDesigner a {font-family: GillSans; font-size: 20px;text-transform:none}
+	.NAPmarketDesignerSubtext {font-family: ModernNAP-Display; font-size: 18px}
+	.NAPmarketDesignerSubtext a {font-family: ModernNAP-Display; font-size: 18px}
+	.lang-zh #main #content .NAPmarketDesigner {margin-top:3px;}
+	.lang-zh #main #content .NAPmarketDesigner a {font-family: GillSans, "微软雅黑", "Microsoft YaHei",Hei,Hei Ti,SimHei,STXihei,sans-serif !important; font-size:18px; line-height:24px; letter-spacing:2px !important;}	
+	.lang-zh .NAPmarketDesignerSubtext a {font-family:"ModernNAP-Display",'MSung PRC Light', Arial, "Microsoft YaHei", Hei, Hei Ti, SimHei, STXihei, sans-serif !important; line-height:30px; font-size:16px;}
+
+	.lang-zh .NAPtextWhite	{font-family:"ModernNAP-Display",'MSung PRC Light', Arial, "Microsoft YaHei", Hei, Hei Ti, SimHei, STXihei, sans-serif !important;}
+
+	.NAPmarketAdvert {width:300px; height: 250px; margin-left: 45px; float: left; margin-bottom: 10px}
+
+	.NAPmagPreviousIssues {width: 520px; float: left; margin-left: 20px; margin-top: 6px}
+	.NAPmagPreviousIssue0, .NAPmagPreviousIssue1 {width: 166px; float: left; margin-right: 11px}
+	.NAPmagPreviousIssue2 {width: 166px; float: left}
+	.NAPmagPreviousIssues img {border: 0}
+	.nap-new .nap-live-ticker{
+		padding-top: 30px;
+		margin: 0 auto 0 !important;
+	}
+	.promoSpace{margin-top:0px;width:950px;}
+	.side-takeover{
+		background: rgb(255, 255, 255); /* The Fallback */
+		background-color: rgba(0, 0, 0, 0);
+		width: 600px;
+		top: 0;
+		height:100%;
+		display: block;
+		position: fixed;
+		background-size:cover !important;
+	}
+	.promoLeft{
+	    margin-left: -600px;
+		background-position: right top;
+	}
+	.promoRight{
+	    margin-left: 950px;
+		background-position: left top;
+	}
+	.sticky-takeover{
+		position:fixed;
+		top:0 !important;
+	}
+	.NAPtextWhite {background-color: #ffffff; padding:0 12px;}
+	.NAPmarketWidth {width:350px; margin:0 auto; background: url(/alfresco/nap/webAssets/webPage/homepage-rebuild/keyline_sanserif.gif) repeat-x ; }
+	.NAPmagStoryWhiteBG {background-color: #ffffff; padding:3px;}
+
+	.NAPmagStoryWhiteBG.NAPstorySubtext {padding: 0px 0px 5px 10px;}
+	.NAPmagStoryWhiteBG.NAPstoryTitle {padding: 10px 0px 0 10px;}
+
+	.NAPeditCover .topCornerImg{position: absolute; top:0; left:0;}
+	.lang-zh .NAPleftCol .NAPeditCover .topCornerImg{left:auto; right:0;}
+	.lang-zh .NAPmarketDesigner a {font-family: MHeiPRC !important;}
+
+	.PorterHPLink{margin-left: 20px;}
+	footer{
+		position:relative;
+		z-index: 999;
+	}
+	.trackingImage{
+		width:1px !important;
+	}
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and(max-width: 1300px) and(max-device-width:1300px) {
+	.promoRight{display:none;}
+	.promoLeft{display:none;}
+}
+@media only screen and (max-width: 1300px) {
+	.promoRight{display:none;}
+	.promoLeft{display:none;}
+}
+@media only screen and (max-width : 480px) {
+	.NAPleftCol{
+		display: none;
+	}
+	.NAPholder{
+		width:100%;
+	}
+	main{
+		min-width: 0;
+	}
+	body.responsive{
+		min-width: 0;
+	}
+	.NAPrightCol{
+		width: 100%;
+	}
+	.NAPmarketStoryHolder{
+		width:100%;
+	}
+	#nap-live-ticker{
+		display: none;
+	}
+}

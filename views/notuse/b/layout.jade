@@ -1,0 +1,38 @@
+doctype
+html(ng-app="myApp")
+  head
+    meta(charset='utf8')
+    base(href='/')
+    title Magazine tool
+    // style
+    link(href='/stylesheets/style.css', rel='stylesheet')
+    // Bootstrap Core CSS
+    link(href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css', rel='stylesheet')
+    // Timeline CSS
+    link(href=url+'css/plugins/timeline.css', rel='stylesheet')
+    // Custom CSS
+    link(href=url+'css/sb-admin-2.css', rel='stylesheet')
+    // Morris Charts CSS
+    link(href=url+'css/plugins/morris.css', rel='stylesheet')
+    // Custom Fonts
+    link(href=url+'font-awesome/css/font-awesome.min.css', rel='stylesheet', type='text/css')
+    // HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries
+    // WARNING: Respond.js doesn't work if you view the page via file://
+    //if lt IE 9
+      script(src='https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js')
+      |         
+      script(src='https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js')
+    // jquery UI
+    script(src='//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js')
+    // jquery
+    script(src='http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js')
+    // loading magazine content
+    script(src='https://ajax.googleapis.com/ajax/libs/angularjs/1.3.11/angular.min.js')
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.13/angular-route.min.js')
+    script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js')
+    script(src='/javascripts/ui-bootstrap-tpls-0.12.0.js')
+    script(src='/javascripts/magazine/magazineController.js')
+    script(src='/javascripts/services/issueService.js')
+    script(src='/javascripts/services/featureService.js')
+    script(src='/javascripts/services/pageService.js')
+    block body

@@ -1,0 +1,39 @@
+{
+    "issue_no" : 1,
+    "feature_name" : "cover sotry",
+    "page_order" : 30,
+    "meta-data" : {
+    	"page_title" : {
+	    	"en" : "Ashley Graham: Beauty Beyond Size",
+	    	"fr" : "À fond les formes",
+	    	"de" : "Sieg der Schönheit",
+	    	"zh" : "Ashley Graha: 美丽无尺限"
+	    },
+	    "page_description" : {
+	    	"en" : "Beauty conventions are shifting, and Ashley Graham couldn't be happier. The model explains why she is on a mission to revolutionize our relationship with the mirror",
+	    	"fr" : "Les canons de beauté évoluent, ce qui n’est pas pour déplaire à ASHLEY GRAHAM. Le top explique comment elle compte nous réconcilier avec le miroir.",
+	    	"de" : "Unser Konzept von Schönheit befindet sich im Wandel und ASHLEY GRAHAM könnte darüber nicht glücklicher sein. Das Model erklärt, warum sie es sich zum Ziel gesetzt hat, unsere Beziehung mit unserem Spiegelbild zu revolutionieren",
+	    	"zh" : "曾经的美丽准则正在被打破，而 Ashley Graham 就是这场身材革命的幕后功臣之一。这位模特为我们讲述她向女人与镜子发起挑战的初心。"
+	    },
+	    "page_keyword" : {
+	    	"en" : "Magazine, fashion magazine, net-a-porter, net-a-porter.com, netaporter, designer clothing, designer shoes, designer bags, designer accessories, designer fashion for women, designer clothes for women, Ashley Graham, Burberry London, Adam Lippes, Chloe, Valentino, IAM by Ileana Makri, Ileana Makri,  J-Lo",
+	    	"fr" : "PMagazine,magazine mode, net-a-porter, net-a-porter.com, netaporter, vêtements de luxe, chaussures de luxe, mode luxe, sacs de luxe, accessoires créateurs, mode créateur pour femme, vêtements créateur pour femme, The EDIT, Jennifer Dickinson, nouvelles collections, Ashley Graham, Croisière, Burberry London, Adam Lippes, Ileana Makri, Thorn, Anita Ko, Valentino, IAM",
+	    	"de" : "Magazin, Zeitschrift, Fashion Magazin, Modemagazin, NET-A-PORTER, net-a-porter, net-a-porter.com, netaporter, Designer Kleidung, Designer Schuhe, Designer Taschen, Designer Accessoires, Designermode für Frauen, Designerkleidung für Frauen, Coverstory, Supermodel, Plus-Size-Model, Ashley Graham, Adam Lippes, Ileana Makri, Valentino, Anita Ko, IAM by Ileana Makri, Gucci, Rick Owens, J.Crew, Joseph, Marc by Marc Jacobs",
+	    	"zh" : "The Edit, The Edit 颇以为然, 颇以为然, 在线杂志，时尚杂志，奢侈品，设计师，NET-A-PORTER, netaporter.com, 颇特集团，颇特女士，奢侈品牌, jennifer dickinson, Ashley Graha, 模特大片, Ford Models,  Instagram, 大码模特, Jennifer Lawrence"
+	    }
+    },
+    "thumbnail" :{
+    	"en" : "/uploads/87cc2568-e282-4e7d-8c6c-b55591fb85dd",
+    	"fr" : "/uploads/87cc2568-e282-4e7d-8c6c-b55591fb85dd",
+    	"de" : "/uploads/87cc2568-e282-4e7d-8c6c-b55591fb85dd",
+    	"zh" : "/uploads/87cc2568-e282-4e7d-8c6c-b55591fb85dd"
+    },
+    "background" :{
+    	"en" : "/uploads/87cc2568-e282-4e7d-8c6c-b55591fb85dd",
+    	"fr" : "/uploads/87cc2568-e282-4e7d-8c6c-b55591fb85dd",
+    	"de" : "/uploads/87cc2568-e282-4e7d-8c6c-b55591fb85dd",
+    	"zh" : "/uploads/87cc2568-e282-4e7d-8c6c-b55591fb85dd"
+    },
+    "script" : "function pageinit_creditslist1() {magazineInteractiveComponents.productOverlay('#creditslist1');}",
+    "mapping" : "<area href='/product/504319' coords='622, 7, 584, 93, 582, 118, 427, 302, 388, 315, 386, 355, 333, 443, 303, 539, 360, 616, 446, 610, 559, 473, 627, 328, 652, 456, 701, 553, 772, 588, 863, 552, 851, 333, 759, 112, 692, 15, 647, 3' shape='poly'>"
+}

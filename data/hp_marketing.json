@@ -1,0 +1,18 @@
+{
+    "issue_no" : 1,
+    "feature_rank" : 30,
+    "meta-data" : {
+    	"feature_name" : {
+	    	"en" : "cover sotry",
+	    	"fr" : "En couverture",
+	    	"de" : "Coverstory",
+	    	"zh" : "封面故事"
+	    },
+	    "feature_description" : {
+	    	"en" : "The start of a new year is the perfect time for a closet detox – Cruise’s chic utility pieces will see you right through to SS15",
+	    	"fr" : "Profitez de la nouvelle année pour entamer une détox mode : actualisez votre dressing avec les pièces pratico-chic des collections Croisière, qui vous suivront jusqu’au PE15.",
+	    	"de" : "Seit ihrer bezeichnenden Rolle als blondes Gift in Tom Fords Debütfilm ist ALINE WEBER wohl jedem präsent. EMILY CRONIN hat das Model getroffen, das ein Publikum fesseln kann, ohne auch nur ein einziges Wort von sich zu geben",
+	    	"zh" : "自从在 Tom Ford 首度执导的影片 中成功扮演金发美女一角，Aline Weber 就成为了圈内热门人物。 Emily Cronin 带你对话这位不动声色就能吸引全场注意的动人模特。"
+	    }
+    }
+}

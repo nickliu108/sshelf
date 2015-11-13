@@ -1,0 +1,70 @@
+.feature_thumbnail {
+	height: 123px;
+	margin-bottom: 4px;
+	border: 1px solid #efefef;
+	-webkit-box-shadow: #bdbdbd 1px 1px 2px 0px;
+	-moz-box-shadow: #bdbdbd 1px 1px 2px 0px;
+	box-shadow: #bdbdbd 1px 1px 2px 0px;
+}
+
+.issueCover {
+	height: 180px;
+	margin: 5px 0 7px 23px;
+	-webkit-box-shadow: 2px 2px 5px rgba(0,0,0,0.38);
+	-moz-box-shadow: 2px 2px 5px rgba(0,0,0,0.38);
+	box-shadow: 2px 2px 5px rgba(0,0,0,0.38);
+}
+
+.addNewIssue {
+	font-size: 30px;
+    text-align: center;
+}
+
+.feature_description{
+	overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.navbar-brand{
+	font-family: "ModernNAP-Display",Georgia,"Times New Roman",serif;
+}
+
+#page-wrapper {
+    min-height: 700px !important;
+}
+
+.contentsList ul{
+	padding:0;
+}
+.magazineContent a{
+color: #333;
+}
+.magazineContent a:hover{
+color: #333;
+}
+.magazineContent *{
+	box-sizing:content-box !important;
+}
+.new-issue-modal img {
+	width:250px;
+}
+.new-issue-modal .row div{
+	padding-top:10px;
+	padding-bottom:10px;
+}
+
+.new-issue-modal input[type=checkbox]
+{
+  -ms-transform: scale(1.1); /* IE */
+  -moz-transform: scale(1.1); /* FF */
+  -webkit-transform: scale(1.1); /* Safari and Chrome */
+  -o-transform: scale(1.1); /* Opera */
+  padding: 10px;
+}
+
+.delete {
+    position: absolute;
+    right: 35px;
+    top: 0;
+}

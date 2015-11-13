@@ -1,0 +1,12 @@
+extends layout
+
+block body
+  div
+    h2 My Blogs
+    ul
+      li
+        a(href='/') Home
+      li
+        a(href='/addPost') Add a new post
+
+    div(ng-view)
