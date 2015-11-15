@@ -21,7 +21,7 @@ Issues.prototype.findAllIssueInfo = function(success, error) {
  
 // Retrieve a issue by its id
 Issues.prototype.findById = function(id, success, error) {
-        this.magazine.findOne({issue_no: parseInt(id)}, response(success,error));
+    this.magazine.findOne({issue_no: id.toString()}, response(success,error));
 };
  
 // Persist a new car document to mongodb

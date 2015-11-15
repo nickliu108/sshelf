@@ -6,7 +6,7 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var http = require('http');
 var busboy = require('connect-busboy');
-// New Code
+
 var mongo = require('mongodb');
 var monk = require('monk');
 var db = monk('localhost:27017/dbtest');
@@ -48,6 +48,9 @@ app.use('/tool/magazine', magToolIssue);
 app.use('/tool/magazine/API/pages',magToolPage);
 app.use('/tool/debug',magToolUtility);
 app.use('/tool/test',testpage);
+app.all('*', function(req, res) {
+  res.redirect("/tool/magazine");
+});
 
 
 //app.use('/tool/magazine/API/partials',magToolPartials);

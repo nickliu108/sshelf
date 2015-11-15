@@ -14,24 +14,16 @@ function Features() {
         var db = require('monk')('localhost/Magazine');
         // obtain a reference to our cars collection within mongodb
         this.issue = db.get('Issues');
-        this.magazine = db.get('Features');
+        this.feature = db.get('Features');
 };
 
 //Retrieve all features base on the issue no
 Features.prototype.findAllFeatures = function(issue_no,success, error) {
-    var this_feature = this.magazine;
-    var s = function(doc) {
-        ids = doc.features.map(function(id) { return ObjectId(id); });
-        this_feature.find( { "_id" : { $in: ids } }, response(success, error) );
-    };
-    var e = function(err) {
-            console.log("error occurred while searching all features");
-    };
-    this.issue.findOne({issue_no : parseInt(issue_no)}, response(s,e));
+    this.feature.find({ "issue_no" :  issue_no }, response(success, error) );
 };
 
 Features.prototype.findById = function(feature_id,success, error) {
-    this.magazine.findOne({_id : feature_id}, response(success, error));
+    this.feature.findOne({_id : feature_id}, response(success, error));
 };
 
 //create feature
