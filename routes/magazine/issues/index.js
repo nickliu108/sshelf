@@ -14,7 +14,7 @@ router.get('/API/recentIssue', issueAPI.findNewIssue);
 
 //feature api
 router.get('/API/features/:feature_id', featureAPI.findFeatureById);
-router.get('/API/features/pages/:id', featureAPI.findAllPage);
+router.get('/API/features/pages/:pageId', featureAPI.findAllPage);
 router.post('/API/features/addFeature', featureAPI.createBlankFeature);
 
 /* GET home page. */

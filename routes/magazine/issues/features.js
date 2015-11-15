@@ -9,7 +9,7 @@ exports.findAllPage = function(req, res) {
         var err = function(err) {
                 res.send(404);
         };
-        page.findAllPage(req.params.id, ok, err);
+        page.findAllPage(req.params.pageId, ok, err);
 };
 
 exports.findFeatureById = function(req, res) {

@@ -8,18 +8,18 @@ var app = angular.module('myApp', ['IssueServiceModule','FeatureServiceModule','
       when('/tool/magazine/', {
         templateUrl: '/tool/magazine/partials/issuePage',
         controller: "IssueController"
-      }).
-      when('/tool/magazine/:issueNumber', {
-        templateUrl: '/tool/magazine/partials/issuePage',
-        controller: "IssueController"
-      }).
-      when('/tool/magazine/:issueNumber/features/:featureID/pages/:pageID', {
-        templateUrl: '/tool/magazine/partials/specificPage',
-        controller: "PageController"
-      }).
-      otherwise({
-        redirectTo: '/tool/magazine/'
       });
+      // when('/tool/magazine/:issueNumber', {
+      //   templateUrl: '/tool/magazine/partials/issuePage',
+      //   controller: "IssueController"
+      // }).
+      // when('/tool/magazine/:issueNumber/features/:featureID/pages/:pageID', {
+      //   templateUrl: '/tool/magazine/partials/specificPage',
+      //   controller: "PageController"
+      // }).
+      // otherwise({
+      //   redirectTo: '/tool/magazine/'
+      // });
     $locationProvider.html5Mode(true);
 }]);
 
@@ -163,7 +163,7 @@ app.controller('featureController',['$scope','featureService','$routeParams','$l
 			$scope.allFeatures = data.sort(compareFeature);
 		});
 		//get current feature name and ID
-		$scope.currentFeatureName= data.feature_title.en;
+		$scope.currentFeatureName= data.meta_data.feature_name.en;
 		//get all pages
 		featureService.getAllPages($scope.currentFeatureID).success(function(data, status, headers){
 			$scope.allPages = data.sort(comparePage);
