@@ -8,15 +8,15 @@ var app = angular.module('myApp', ['IssueServiceModule','FeatureServiceModule','
       when('/tool/magazine/', {
         templateUrl: '/tool/magazine/partials/issuePage',
         controller: "IssueController"
+      }).
+      when('/tool/magazine/:issueNumber', {
+        templateUrl: '/tool/magazine/partials/issuePage',
+        controller: "IssueController"
+      }).
+      when('/tool/magazine/:issueNumber/features/:featureID/pages/:pageID', {
+        templateUrl: '/tool/magazine/partials/specificPage',
+        controller: "PageController"
       });
-      // when('/tool/magazine/:issueNumber', {
-      //   templateUrl: '/tool/magazine/partials/issuePage',
-      //   controller: "IssueController"
-      // }).
-      // when('/tool/magazine/:issueNumber/features/:featureID/pages/:pageID', {
-      //   templateUrl: '/tool/magazine/partials/specificPage',
-      //   controller: "PageController"
-      // }).
       // otherwise({
       //   redirectTo: '/tool/magazine/'
       // });
@@ -111,6 +111,7 @@ app.controller('featureController',['$scope','featureService','$routeParams','$l
 	console.log("feature controller loaded");
 	$scope.currentFeatureID = $routeParams.featureID;
 	$scope.currentIssueNumber = $routeParams.issueNumber;
+	//why load feature is redirecting and where is /tool/magazine/features/:featureId handled??
 	$scope.loadFeature = function(featureID){
 		console.log("redirect to: "+ "/tool/magazine/partial/features/"+featureID);
 		$location.path("/tool/magazine/features/"+featureID);
