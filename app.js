@@ -44,8 +44,7 @@ app.use(function(req,res,next){
 });
 
 app.use('/images/',images);
-app.use('/tool/magazine', magToolIssue);
-app.use('/tool/magazine/API/pages',magToolPage);
+magToolIssue.magazineRoute(app);
 app.use('/tool/debug',magToolUtility);
 app.use('/tool/test',testpage);
 
@@ -53,7 +52,7 @@ app.use('/tool/test',testpage);
 //app.use('/tool/magazine/API/partials',magToolPartials);
 
 // redirect all others to the index (HTML5 history)
-app.use('/tool/magazine/*', magToolIssue);
+// app.use('/tool/magazine/*', magToolIssue);
 
 /// catch 404 and forwarding to error handler
 app.use(function(req, res, next) {
