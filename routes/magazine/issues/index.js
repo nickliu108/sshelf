@@ -1,4 +1,5 @@
 var magazineAPI = require('../API/index');
+var magazineTemplate = require('../template/index');
 var issueAPI = require('./issues');
 var featureAPI = require('./features');
 
@@ -9,6 +10,7 @@ var magazineRoute = function(app){
 	});
 
 	app.use('/tool/magazine/APIs', magazineAPI);
+	app.use('/tool/magazine/template', magazineTemplate);
 };
 
 
