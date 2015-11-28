@@ -12,7 +12,7 @@ var editAPIHandler = function(){
                 res.json(doc.sort()[0]);
         };
         var err = function(err) {
-                res.send(404);
+            res.send(err.toString());
         };
         issue.findAllIssueInfo(ok, err);
     }
@@ -23,7 +23,7 @@ var editAPIHandler = function(){
                 res.json(doc);
         };
         var err = function(err) {
-                res.send(404);
+            res.send(err.toString());
         };
         issue.findAllIssueInfo(ok, err);
     }
@@ -34,7 +34,7 @@ var editAPIHandler = function(){
                 res.json(doc);
         };
         var err = function(err) {
-                res.send(404);
+            res.send(err.toString());
         };
         feature.findAllFeatures(req.params.issueNumber, ok, err);
     }
@@ -45,7 +45,7 @@ var editAPIHandler = function(){
                 res.json(doc);
         };
         var err = function(err) {
-                res.send(404);
+            res.send(err.toString());
         };
         issue.findById(req.params.issueNumber, ok, err);
     }
@@ -59,7 +59,7 @@ var editAPIHandler = function(){
                 res.send(201);
         };
         var err = function(err) {
-                res.send(409, "Failed to create car");
+             res.send(err.toString(),"can't create new issue");
         };
         issue.create(req.body, ok, err);
     }
@@ -72,7 +72,7 @@ var editAPIHandler = function(){
                         res.send(200);
                 };
                 var err = function(err) {
-                        res.send(409, "update failed");
+                    res.send(err.toString(), "update failed");
                 };
                 issue.update(req.body, ok, err);
         }
@@ -84,7 +84,7 @@ var editAPIHandler = function(){
                 res.send(200);
         };
         var err = function(err) {
-                res.send(409, "Failed to remove car");
+            res.send(err.toString(), "Failed to delete an issue");
         };
         issue.removeById(req.params.issueNumber, ok, err);
     }

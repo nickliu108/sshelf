@@ -13,12 +13,6 @@ var magazineRoute = function(app){
 
 
 
-// //issue api
-
-// //feature api
-// router.get('/API/features/:feature_id', featureAPI.findFeatureById);
-// router.get('/API/features/pages/:pageId', featureAPI.findAllPage);
-// router.post('/API/features/addFeature', featureAPI.createBlankFeature);
 
 // /* GET home page. */
 // router.get('/', function(req, res) {

@@ -11,7 +11,7 @@ var editAPIHandler = function(){
                     res.json(doc);
             };
             var err = function(err) {
-                    res.send(404);
+                res.send(err.toString());
             };
             page.findAllPage(req.params.featureId, ok, err);
     };
@@ -22,7 +22,7 @@ var editAPIHandler = function(){
                     res.json(doc);
             };
             var err = function(err) {
-                    res.send(404);
+                res.send(err.toString());
             };
             feature.findById(req.params.featureId, ok, err);
     };
@@ -37,7 +37,7 @@ var editAPIHandler = function(){
                 res.json(doc);
         };
         var err = function(err) {
-                res.send(404);
+            res.send(err.toString());
         };
         feature.createFeature(issueNo, featureOrder, featureName, ok, err);
     };
@@ -59,7 +59,7 @@ var editAPIHandler = function(){
     };
 }();
 
-router.get('/:featureId/findAllPages', editAPIHandler.findAllPages);
+router.get('/:featureId/pages', editAPIHandler.findAllPages);
 
 router.route('/:featureId')
     .get(editAPIHandler.findFeatureById)
