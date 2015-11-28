@@ -14,13 +14,6 @@ var magazineRoute = function(app){
 
 
 // //issue api
-// router.get('/API/issues', issueAPI.findAllIssueInfo);
-// router.get('/API/issues/:issue_No/features', issueAPI.findAllFeatures);
-// router.get('/API/issues/:issue_No', issueAPI.findById);
-// router.post('/API/issues', issueAPI.create);
-// router.delete('/API/issues/:issue_No', issueAPI.removeById);
-// router.put('/API/issues/:issue_No', issueAPI.update);
-// router.get('/API/recentIssue', issueAPI.findNewIssue);
 
 // //feature api
 // router.get('/API/features/:feature_id', featureAPI.findFeatureById);

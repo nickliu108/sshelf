@@ -1,4 +1,5 @@
 var issueAPIs = require('./issues');
+var featureAPIs = require('./features');
 var router = require('express').Router();
 
 router.use(function loging(req, res, next){
@@ -14,7 +15,7 @@ router.get('/', function(req, res, next){
 });
 
 router.use('/issues', issueAPIs);
-// router.get('/features', featureAPIs);
+router.use('/features', featureAPIs);
 // router.get('/pages', pageAPIs);
 
 module.exports = router;
