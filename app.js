@@ -12,8 +12,7 @@ var monk = require('monk');
 var db = monk('localhost:27017/dbtest');
 
 var images = require('./routes/images/index');
-var magToolIssue = require('./routes/magazine/issues/index');
-var magToolPage = require('./routes/magazine/pages/index');
+var magTool = require('./routes/magazine/index');
 var magToolUtility = require('./routes/utility/index');
 var testpage = require('./routes/test/index');
 
@@ -44,7 +43,7 @@ app.use(function(req,res,next){
 });
 
 app.use('/images/',images);
-magToolIssue.magazineRoute(app);
+magTool.magazineRoute(app);
 app.use('/tool/debug',magToolUtility);
 app.use('/tool/test',testpage);
 
