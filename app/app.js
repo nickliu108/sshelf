@@ -4,7 +4,7 @@ var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
-var http = require('http');
+
 var busboy = require('connect-busboy');
 
 var mongo = require('mongodb');
@@ -29,12 +29,8 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded());
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
-app.use(busboy()); 
+app.use(busboy());
 
-http.createServer(app).listen(app.get('port'), function(){
-  console.log('Express server listening on port ' + app.get('port'));
-});
-//
 
 // Make our db accessible to our router
 app.use(function(req,res,next){
@@ -84,4 +80,6 @@ app.use(function(err, req, res, next) {
     });
 });
 
-module.exports = app;
+app.listen(9999, function(){
+  console.log('Running tool on port 9999');
+});
