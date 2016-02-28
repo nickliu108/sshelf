@@ -4,8 +4,8 @@ router.get('/', function(req, res) {
     res.render('magazine/index', { url: '/stylesheets/bootstrap/'});
 });
 
-router.get('/test', function(){
-	
+router.get('/test', function(req, res){
+	res.send('test');
 });
 
 module.exports = router;

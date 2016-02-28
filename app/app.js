@@ -8,15 +8,11 @@ var magTool = require('./routes/magazine/index');
 // var magToolUtility = require('./routes/utility/index');
 // var testpage = require('./routes/test/index');
 
-
-
-
 // Make our db accessible to our router
 app.use(function(req,res,next){
     req.db = db;
     next();
 });
-
 
 magTool.magazineRoute(app);
 
