@@ -8,6 +8,7 @@ editing tool
 
 
 ## Start
+    `mongod --dbpath data`
     `npm start`
 
 
