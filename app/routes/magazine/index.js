@@ -5,8 +5,7 @@ var featureAPI = require('./API/features');
 
 var magazineRoute = function(app){
 	app.get('/tool/magazine', function(req, res, next){
-	    console.log('running');
-	    res.send('working');
+	  res.send('working');
 	});
 
 	app.use('/tool/magazine/APIs', magazineAPI);
@@ -25,8 +24,8 @@ var magazineRoute = function(app){
 //     console.log("rendering feature page");
 //     console.log("issue param: "+ req.params.issue_No);
 //     console.log("feature id: " + req.params.feature_id);
-// 	res.render('magazine/partials/featurePage',{ 
-// 		url: '/stylesheets/bootstrap/', 
+// 	res.render('magazine/partials/featurePage',{
+// 		url: '/stylesheets/bootstrap/',
 // 		issue_id : req.params.issue_No,
 // 		feature_id : req.params.feature_id
 // 	});
@@ -42,8 +41,8 @@ var magazineRoute = function(app){
 // });
 
 // router.get('/partials/:issue_No/featurePage/:featureID', function(req, res) {
-//     res.render('magazine/partials/featurePage', { 
-//         url: '/stylesheets/bootstrap/', 
+//     res.render('magazine/partials/featurePage', {
+//         url: '/stylesheets/bootstrap/',
 //         issue_id : req.params.issueNumber,
 //         feature_id : req.params.featureID
 //     });
