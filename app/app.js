@@ -1,5 +1,4 @@
-var monk = require('monk');
-var db = monk('localhost:27017/dbtest');
+'use strict';
 
 var app = require('./config/express');
 var magTool = require('./routes/magazine/index');
