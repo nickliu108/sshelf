@@ -20,12 +20,9 @@ magTool.magazineRoute(app);
 // app.use('/tool/debug',magToolUtility);
 // app.use('/tool/test',testpage);
 
+
 app.use(function(req, res, next) {
     var err = new Error('Not Found');
     err.status = 404;
     next(err);
-});
-
-app.listen(3000, function(){
-  console.log('Running tool on port 3000');
 });

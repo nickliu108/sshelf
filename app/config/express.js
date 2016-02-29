@@ -20,4 +20,8 @@ app.use(cookieParser());
 app.use(express.static('public'));
 app.use(busboy());
 
+app.listen(3000, function(){
+  console.log('Running tool on port 3000');
+});
+
 module.exports = app;
