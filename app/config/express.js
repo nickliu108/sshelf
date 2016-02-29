@@ -7,6 +7,7 @@ var bodyParser = require('body-parser');
 var busboy = require('connect-busboy');
 
 var config = require('./config');
+var consoleLogger = require('../middleware/logger');
 
 var app = express();
 
@@ -22,13 +23,7 @@ app.use(cookieParser());
 app.use(express.static('public'));
 app.use(busboy());
 
-app.use(function(req, res, next){
-  console.log('originalUrl: ', req.originalUrl);
-  console.log('hostname: ', req.hostname);
-  console.log('baseUrl: ', req.baseUrl);
-  console.log('path: ', req.path);
-  next();
-});
+app.use(consoleLogger);
 
 app.listen(config.PORT, function(){
   console.log('Running tool on port '+ config.PORT);

@@ -2,11 +2,8 @@ var issueAPIs = require('./issues');
 var featureAPIs = require('./features');
 var router = require('express').Router();
 
-router.use(function loging(req, res, next){
+router.use(function(req, res, next){
 	console.log("APIs running");
-	console.log('originalUrl: ', req.originalUrl);
-	console.log('baseUrl: ', req.baseUrl);
-	console.log('path: ', req.path);
 	next();
 });
 
