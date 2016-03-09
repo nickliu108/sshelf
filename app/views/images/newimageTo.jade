@@ -1,9 +1,0 @@
-extends layout_image
-
-block content
-    h1= title
-    form#upload-asset(action='/images/fixImages', method='POST',enctype="multipart/form-data")
-        input(type='hidden', value='/images/backup/test.jpg', name='imageLocation')
-        input(type='file', name='pic', accept='image/jpg')
-        input#btnSubmit(type="submit")
-
